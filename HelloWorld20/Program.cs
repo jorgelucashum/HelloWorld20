@@ -9,7 +9,7 @@ namespace HelloWorld20
         // - Homogênea (dados do mesmo tipo)
         // - Ordenada (elementos acessados por meios de posições) // { 0, 1, 2, 3... }
         // - Inicia vazia, e seus elementos são alocados sob demanda 
-        // - Cada elemento ocupado um 'nó' (ou nodo) da lista
+        // - Cada elemento ocupa um 'nó' (ou nodo) da lista
         // - É uma Class chamada 'List' do namespace: System.Collections.Generic
 
         static void Main(string[] args)
@@ -40,8 +40,8 @@ namespace HelloWorld20
 
             // Expressôes Lambda/predicado.
             // => - tal que
-            // Expressão lambda: '(x => x[0] == 'A')', funciona como uma função simplificada que retorna verdadeiro ou falso dependendo dos parametros. // 'x' é declarado automatico como string.
-            // Parametro: ('x' tal que x na posição [0] seja igual a 'A') sendo 'x[0]' o primeiro caractere do string.
+            // Expressão lambda: '(x => x[0] == 'A')', funciona como uma função simplificada que retorna verdadeiro ou falso dependendo dos parâmetros. // 'x' é declarado automaticamente como string.
+            // Parâmetro: ('x' tal que x na posição [0] seja igual a 'A') sendo 'x[0]' o primeiro caractere do string.
             string s1 = list.Find(x => x[0] == 'A'); // '.Find' comando para encontrar o primeiro elemento pela lista que satisfaça o predicado (lambda).
             string s2 = list.FindLast(x => x[0] == 'A'); // '.Findlast' comando para encontrar a último elemento pela lista que satisfaça o predicado.
             Console.WriteLine("------------------------------------------------------\nBuscas da lista: ");
